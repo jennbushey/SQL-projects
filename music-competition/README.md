@@ -1,6 +1,8 @@
 # Music Competition
 
-The objective of this assignment is to apply your understanding of SQL syntax and programming on a practical database application.
+[![Database](https://img.shields.io/badge/database-MySQL-green.svg)](https://www.mysql.com/)
+
+The objective of this assignment is to apply your understanding of SQL syntax and programming on a practical database application and to apply your understanding of relational algebra and database design theory.
 
 Assignment from ENSF 608 Fall 2023 - narrative and query prompts created by Dr. Marasco, queries, relational algebra expressions were completed by Jenn Bushey in November 2023.
 
@@ -106,3 +108,8 @@ results of the query.
    Retrieve a list of all score values that were earned by competitors belonging to the “Music Mastery” studio.
 
 _ENSF 608 Fall 2023 – Marasco_
+
+## Technologies Used
+
+-   MySQL
+-   Diagrams were created using [Draw.io](https://draw.io/).

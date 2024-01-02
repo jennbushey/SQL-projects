@@ -1,0 +1,6 @@
+# Ignore compiled Java classes
+/out/
+/bin/
+
+# Ignore external libraries
+/lib/
