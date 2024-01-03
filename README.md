@@ -9,3 +9,7 @@ The objective of this assignment is to apply your understanding of SQL syntax an
 ## [Student Registration](https://github.com/jennbushey/SQL-projects/tree/main/student-registration)
 
 Java code connected to a MySQL database using JDBC to perform basic search queries.
+
+## [Ticket Analysis](https://github.com/jennbushey/SQL-projects/tree/main/ticket-analysis)
+
+Python code to randomly create IT tickets in a MySQL database and then building a PowerBI dashboard that provides information on service tickets.
