@@ -22,3 +22,9 @@ Java code connected to a MySQL database using JDBC to perform basic search queri
 [![Visualization](https://img.shields.io/badge/visualization-Power%20BI-purple.svg)](https://powerbi.microsoft.com/)
 
 Python code to randomly create IT tickets in a MySQL database and then building a PowerBI dashboard that provides information on service tickets.
+
+## [Circus Database](https://github.com/jennbushey/SQL-projects/tree/main/circus-database)
+
+[![Database](https://img.shields.io/badge/database-MySQL-green.svg)](https://www.mysql.com/)
+
+The objective of this project is to apply your understanding of course concepts, database design, and SQL queries on a real-world database application.

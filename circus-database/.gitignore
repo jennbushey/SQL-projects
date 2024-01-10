@@ -1,0 +1,7 @@
+# Ignore editable files
+*.pptx
+*.docx
+
+# Ignore video files
+*.mp4
+
