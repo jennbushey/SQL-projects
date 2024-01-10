@@ -2,7 +2,7 @@
 
 [![Database](https://img.shields.io/badge/database-MySQL-green.svg)](https://www.mysql.com/)
 
-The objective of this project is to apply your understanding of course concepts, database design, and SQL queries on a real-world database application.
+The objective of this project is to apply your understanding of database design, and SQL queries on a real-world database application.
 
 Project from ENSF 608 Fall 2023 - narrative and prompts created by Dr. Marasco, database, queries, ER diagram, and relational model were created by Mehreen Akmal, Jenn Bushey, Eric Diep, and Hao Liu in December 2023.
 
