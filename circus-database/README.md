@@ -10,15 +10,15 @@ Project from ENSF 608 Fall 2023 - narrative and prompts created by Dr. Marasco, 
 
 ### Conceptual Database Design:
 
-Based on the provided requirements narrative, design and draw an [EER diagram]() for the described database application.
+Based on the provided requirements narrative, design and draw an [EER diagram](https://github.com/jennbushey/SQL-projects/blob/main/circus-database/EER%20Diagram.pdf) for the described database application.
 
 ### Logical Database Design and Creation Code:
 
-Map your conceptual schema into a [relational data model](), including all primary keys and referential integrity constraints (foreign keys). Then use your relational model to create a [.sql script]() that could be used by someone else to initialize and populate your database. You are free to create your own example data that aligns with the narrative.
+Map your conceptual schema into a [relational data model](https://github.com/jennbushey/SQL-projects/blob/main/circus-database/Relational%20Model.pdf), including all primary keys and referential integrity constraints (foreign keys). Then use your relational model to create a [.sql script](https://github.com/jennbushey/SQL-projects/blob/main/circus-database/populate-database.sql) that could be used by someone else to initialize and populate your database. You are free to create your own example data that aligns with the narrative.
 
 ### Query Code
 
-Include a [.sql file]() that contains the queries listed below:
+Include a [.sql file](https://github.com/jennbushey/SQL-projects/blob/main/circus-database/query-database.sql) that contains the queries listed below:
 
 1. Show all tables and explain how they are related to one another (keys, triggers, etc.)
 2. A basic retrieval query
