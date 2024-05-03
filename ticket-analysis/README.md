@@ -1,39 +1,93 @@
-# Ticket Analysis
+# Service Ticket Dashboard and Analysis
 
-[![Language](https://img.shields.io/badge/language-Python-blue.svg)](https://www.python.org/)
-[![Database](https://img.shields.io/badge/database-MySQL-green.svg)](https://www.mysql.com/)
-[![Visualization](https://img.shields.io/badge/visualization-Power%20BI-purple.svg)](https://powerbi.microsoft.com/)
+## Overview
 
-In this assignment, you will build a dashboard that provides information on service tickets. Since we do not have a file with service tickets we need to create a database with service tickets.
+This portfolio project focuses on analyzing service ticket data using Python for ticket generation, MySQL for database management, and Tableau / Power BI for visualization. The project aims to demonstrate proficiency in data analysis, database management, and data visualization techniques.
 
-Tasks:
+## Objectives
 
-1. Setup a database for service tickets.
-1. Develop a ticket generator program.
-    1. Since we do not have any sample ticket file you need to write a program to generate tickets. You can either write the program in Java or Python. It should follow the following requirements. All values in the ticket will be randomly determined based on the respective values in the database table. That is as close as we can come to provide a good sample event log.
-    1. Input parameters: Number of tickets to generate, time window start datae, time window end date.
-    1. Each ticket that the program creates should fall within the provided time window. For example if you create 10000 tickets for the first 6 month of the year your time window is 2023-01-01 to 2023-06-30
-1. Develop a dashboard and visualize the ticket data.
-    1. Show total number of tickets over time window as graph by class.
-    1. Show successful deployment over deployment failures as line chart by month
-    1. Show MTTR over time window. MTTR = Duration/Number of Tickets
-    1. Try a couple of other interesting dashboards you might come up with. Play around with the generated data.
+-   Create a program to generate synthetic service tickets based on predefined criteria.
+-   Develop a database for storing and managing service ticket data.
+-   Build interactive dashboards in Tableau to visualize key performance indicators (KPIs) related to service tickets.
 
-Assignment from ENSF 607 Fall 2023 - completed as a group assignment by Mehreen Akmal and Jenn Bushey.
+## Project Tasks
 
-## Output
+1. **Ticket Generator Program**:
 
-Ticket generation input:
-![Input](./images/input.png)
+    - Develop a Python program to generate synthetic service tickets based on specified parameters such as ticket quantity and time window.
+    - Ensure that generated tickets adhere to realistic patterns and distributions.
 
-Results of the ticket generation script:
+1. **Database Setup**: Design and implement a database schema for storing service ticket information, including ticket ID, class, status, duration, etc.
+
+1. **Dashboard Development**:
+    - Use Tableau to create interactive dashboards that visualize the following KPIs:
+        - Total number of tickets over time by class.
+        - Distribution of successful deployments versus deployment failures by month.
+        - Mean time to repair (MTTR) over time.
+
+## Ticket Generation Script
+
+The ticket generation script is a Python program that generates synthetic service tickets and populates the `EVENTLOG` table in the `SERVICE_TICKETS` MySQL database. The script randomly generates values for each ticket attribute by selecting values from the `EVENTACTIVITY`, `EVENTSTATUS`, `EVENTORIGIN`, and `EVENTCLASS` tables in the database.
+
+The script prompts the user to input the number of tickets to generate, a start date, and an end date for the ticket dates. It then generates random values for each ticket attribute, including case ID, activity, urgency, impact, start date, end date, ticket status, origin, and class, and inserts them into the `EVENTLOG` table.
+
+To ensure data integrity, the script validates the user-provided date range and generates unique case IDs for each ticket. It also calculates the duration of each ticket based on the start and end dates.
+
+Running the script:
+
+```
+python ./Ticket_Generator.py
+Connected to MySQL database
+How many tickets would you like to generate? 10000
+What is the start date for the tickets? 2023-01-01
+What is the end date for the tickets? 2023-06-30
+Database update complete.
+```
+
+## Database Construction
+
+The project includes the construction of a MySQL database named `SERVICE_TICKETS` with the following tables:
+
+1. **EventActivity**: Contains the possible activity names.
+2. **EventOrigin**: Contains the possible originator names.
+3. **EventStatus**: Contains the possible status descriptions.
+4. **EventClass**: Contains the possible class descriptions.
+5. **EventLog**: Contains the service ticket information, including case ID, activity, urgency, impact, priority, start date, end date, ticket status, update date time, duration, origin, and class.
+
+The database construction SQL script also includes population of the `EventActivity`, `EventOrigin`, `EventStatus`, and `EventClass` tables with initial entries.
+
+Result of Ticket Generation Script:
 ![Output](./images/output.png)
 
-Dashboard:
-![dashboard](./images/service_tickets.png)
+## Dashboard Development
+
+Tableau Dashboard:
+![Tableau](./images/dashboard_tableau.png)
+
+Power BI Dashboard:
+![Power BI](./images/dashboard_powerbi.png)
+
+### Tableau Public Visualizations
+
+Explore interactive visualizations of the service ticket analysis on Tableau Public:
+
+-   [Tableau Public Visualizations](https://public.tableau.com/app/profile/jenn.bushey/viz/ServiceTicketDashboard/IncidentManagementDashboard)
+
+### PowerPoint Presentation
+
+View the presentation summarizing the project and its findings:
+
+-   [Presentation](./Service%20Ticket%20Dashboard.pdf)
+
+These links provide access to the visualizations and presentation related to the service ticket analysis project.
 
 ## Technologies Used
 
 -   Python
 -   MySQL
+-   Tableau
 -   Power BI
+
+## Conclusion
+
+This project showcases the ability to analyze and visualize service ticket data effectively. The use of Python for data generation, MySQL for database management, and Tableau for visualization highlights a comprehensive skill set in data analysis and visualization, which can be a valuable asset in various professional settings.

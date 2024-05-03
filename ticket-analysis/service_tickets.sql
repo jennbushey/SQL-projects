@@ -69,6 +69,6 @@ CREATE TABLE EventLog (
   );
 
 -- Create specific user for this database
--- CREATE USER 'username'@'127.0.0.1' IDENTIFIED BY 'password';
+CREATE USER 'username'@'127.0.0.1' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON STUDENT_REGISTRATION_SYSTEM.* TO 'username'@'127.0.0.1';
 FLUSH privileges;
