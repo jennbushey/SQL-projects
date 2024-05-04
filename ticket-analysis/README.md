@@ -39,8 +39,8 @@ Running the script:
 python ./Ticket_Generator.py
 Connected to MySQL database
 How many tickets would you like to generate? 10000
-What is the start date for the tickets? 2023-01-01
-What is the end date for the tickets? 2023-06-30
+What is the start date for the tickets? YYYY-MM-DD 2023-01-01
+What is the end date for the tickets? YYYY-MM-DD 2023-06-30
 Database update complete.
 ```
 
@@ -52,12 +52,9 @@ The project includes the construction of a MySQL database named `SERVICE_TICKETS
 2. **EventOrigin**: Contains the possible originator names.
 3. **EventStatus**: Contains the possible status descriptions.
 4. **EventClass**: Contains the possible class descriptions.
-5. **EventLog**: Contains the service ticket information, including case ID, activity, urgency, impact, priority, start date, end date, ticket status, update date time, duration, origin, and class.
+5. **EventLog**: Contains the service ticket information, gincluding case ID, activity, urgency, impact, priority, start date, end date, ticket status, update date time, duration, origin, and class.
 
 The database construction SQL script also includes population of the `EventActivity`, `EventOrigin`, `EventStatus`, and `EventClass` tables with initial entries.
-
-Result of Ticket Generation Script:
-![Output](./images/output.png)
 
 ## Dashboard Development
 
